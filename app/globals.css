@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* white */
+  --color-primary: #ffff;
+  /* black */
+  --color-secondary: #1a1a1a;
+  
+  --color-text: #888;
+  --color-border: #e8e8e8;
+
+  --font-sans: var(--font-inter);
+}
+
+@layer base {
+  button,
+  a,
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="checkbox"],
+  input[type="radio"],
+  select,
+  label,
+  summary,
+  [role="button"] {
+    cursor: pointer !important;
+  }
+
+  /* Reset for disabled elements */
+  [disabled],
+  [disabled] *,
+  .cursor-not-allowed,
+  .disabled {
+    cursor: not-allowed !important;
+  }
+}
